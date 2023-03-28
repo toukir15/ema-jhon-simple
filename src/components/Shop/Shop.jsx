@@ -15,7 +15,7 @@ const Shop = () => {
     const newCart = [...cart, product];
     setCart(newCart);
   };
-  console.log(products);
+  // console.log(products);
   return (
     <div>
       <div className="shop__container">
