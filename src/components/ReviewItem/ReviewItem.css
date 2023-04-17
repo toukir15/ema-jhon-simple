@@ -1,38 +1,50 @@
-.review__item {
-  border: 1px solid gray;
-  margin-bottom: 25px;
-  padding: 5px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
+.review-item {
+    width: 571px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 8px 25px 8px 8px;
+    display: flex;
+    align-items: center;
 }
-.review__item img {
-  width: 80px;
-  height: 80px;
+
+.review-item .product-title {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
 }
-.review__details {
-  flex-grow: 1;
+
+.review-details {
+    flex-grow: 1;
 }
-.review__details p {
-  margin: 0 15px;
+
+
+.review-details p{
+    margin: 0 15px;
 }
-.product__title {
-  font-size: 18px;
-  font-weight: bold;
+
+.review-item img {
+    width: 91px;
+    height: 91px;
+    border-radius: 6px;
 }
-.orange__color {
-  color: orange;
+
+.orange-text{
+    color: #FF9900;
 }
-.delete__btn {
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-  background: rgba(235, 87, 87, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* delete button styles */
+.btn-delete{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: rgba(235, 87, 87, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.delete__icon {
-  font-size: 27px;
-  color: #eb5757;
+.delete-icon{
+    color: #EB5757;
+    font-size: 27px;
 }

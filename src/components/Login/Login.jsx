@@ -1,7 +1,7 @@
 import React from "react";
 
 const Login = () => {
-  return <div>login in coming soon</div>;
+  return <div>{/* <h2>Login coming sooon</h2> */}</div>;
 };
 
 export default Login;

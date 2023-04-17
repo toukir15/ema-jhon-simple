@@ -1,14 +1,18 @@
-nav {
-  background-color: #1c2b35;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 100px;
+.header {
+    height: 80px;
+    background-color: #1C2B35;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-nav a {
-  margin-right: 20px;
-  color: white;
+
+nav.header a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 30px;
 }
-nav a:hover {
-  color: orange;
+nav.header a:hover{
+    color: orange;
 }

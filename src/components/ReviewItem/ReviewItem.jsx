@@ -1,27 +1,23 @@
-import React from "react";
-import "./ReviewItem.css";
-import { AiOutlineDelete } from "react-icons/ai";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import './ReviewItem.css';
 
 const ReviewItem = ({ product, handleRemoveFromCart }) => {
-  console.log(handleRemoveFromCart);
-  const { id, name, img, price, quantity } = product;
-  return (
-    <div className="review__item">
-      <img src={img} alt="" />
-      <div className="review__details">
-        <p className="product__title">{name}</p>
-        <p>
-          Price:<span className="orange__color">${price}</span>{" "}
-        </p>
-        <p>
-          Quantity: <span className="orange__color">{quantity}</span>{" "}
-        </p>
-      </div>
-      <button onClick={() => handleRemoveFromCart(id)} className="delete__btn">
-        <AiOutlineDelete className="delete__icon" />
-      </button>
-    </div>
-  );
+    const { id, img, price, name, quantity } = product;
+    return (
+        <div className='review-item'>
+            <img src={img} alt="" />
+            <div className='review-details'>
+                <p className='product-title'>{name}</p>
+                <p>Price: <span className='orange-text'>${price}</span></p>
+                <p>Order Quantity: <span className='orange-text'>{quantity}</span></p>
+            </div>
+            <button onClick={() => handleRemoveFromCart(id)} className='btn-delete'>
+                <FontAwesomeIcon className='delete-icon' icon={faTrashAlt} />
+            </button>
+        </div>
+    );
 };
 
 export default ReviewItem;
